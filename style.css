@@ -1,0 +1,10 @@
+*{
+    background-color: rgb(27, 19, 48);
+    color: aliceblue;
+}
+#input-main{
+    background-color: rgb(6, 56, 35); 
+}
+#input-main::placeholder{
+    color: rgba(255, 255, 255, 0.349);
+}
