@@ -1,0 +1,11 @@
+*{
+    background-color: rgb(21, 21, 39);
+    color: white;
+}
+.main-div{
+    display: flex;
+    
+}
+#poke{
+    display: flex;
+}
