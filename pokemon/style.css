@@ -1,11 +1,63 @@
 *{
     background-color: rgb(21, 21, 39);
-    color: white;
+    color: rgb(233, 233, 233);
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 .main-div{
-    display: flex;
-    
+    display: block;
+    align-items: center;
+    justify-content: center;
 }
-#poke{
+#poke {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 16px;
+    justify-items: start;
+    align-items: center;
+}
+.pokemon{
+    background-color: rgba(74, 126, 172, 0);
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 9px;
+}
+.pokemon li{
+    background-color: rgba(8, 36, 61, 0);
+}
+
+.imgPoke{
+    background-image: linear-gradient(to right top, #ffe800, #ff9800, #ff0057, #ff00a4, #7a00eb);
+    width: 100%;
+    border-radius: 20px;
+}
+.secondDivIn {
+    display: flex;
+    gap: 12px;
+    background-color: #1c1a1d;
+    width: 360px;
+    border-radius: 20px;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+.secondDivIn h3{
+    background-color: #1c1a1d
+}
+.secondDivIn li{
+    background-color: #1c1a1d;
+}
+.firstDivIn {
+    width: 140px;
+}
+.sdTitulo{
+    background-color: saddlebrown;
+    width: 40%;
+    margin: 10px;
+}
+.sdAtt{
+    width: 60%;
 }
