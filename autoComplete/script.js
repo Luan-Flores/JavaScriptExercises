@@ -24,16 +24,20 @@ document.getElementById("btn-main").addEventListener("click", guardarPalavra);
     
 console.log(palavrasChave);
 const input = document.getElementById("input-main");
+const sugestao = document.getElementById("sugestao");
 input.addEventListener('input', (event) => {
     const valorAtual = event.target.value;
-    console.log(valorAtual);
-    let result = palavrasChave.filter(filtrar);
-    function filtrar(wordez){
-        return wordez.match(valorAtual);
+    if (valorAtual === ""){
+        sugestao.innerText = "";
+    }else{
+        console.log(valorAtual);
+        let result = palavrasChave.filter(filtrar);
+        function filtrar(wordez){
+            return wordez.match(valorAtual);
+        }
+        console.log(result + " <- resultado do filter")
+        sugestao.innerText = result;
     }
-    console.log(result + " <- resultado do filter")
-    const sugestao = document.getElementById("sugestao");
-    sugestao.innerText = result;
 })
 
 
